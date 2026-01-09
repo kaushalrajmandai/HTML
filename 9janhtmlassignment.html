@@ -1,0 +1,67 @@
+<body>
+
+    <div class="box1">
+        This is BOX 1 content
+    </div>
+    <style>
+    .box1 {
+  padding: 20px;
+  border: 3px solid blue;
+  margin: 20px;
+  background-color: #ffebee;
+  position: relative;
+}
+
+.box1::before {
+  content: "Padding: 20px | Border: 3px solid | Margin: 20px";
+  position: absolute;
+  top: -25px;
+  left: 0;
+  font-size: 12px;
+  color: #333;
+}</style>
+
+    <div class="box2">
+        This is BOX 2 content
+    </div>
+    <style>
+    .box2 {
+  padding: 30px;
+  border: 5px dashed green;
+  margin: 40px;
+  background-color: #e8f5e9;
+  position: relative;
+}
+
+.box2::before {
+  content: "Padding: 30px | Border: 5px dashed | Margin: 40px";
+  position: absolute;
+  top: -25px;
+  left: 0;
+  font-size: 12px;
+  color: #333;
+}</style>
+
+    <div class="box3">
+        This is BOX 3 content
+    </div>
+    <style>
+        .box3 {
+  padding: 10px;
+  border: 4px dotted red;
+  margin: 10px;
+  background-color: #fffde7;
+  position: relative;
+}
+
+.box3::before {
+  content: "Padding: 10px | Border: 4px dotted | Margin: 10px";
+  position: absolute;
+  top: -25px;
+  left: 0;
+  font-size: 12px;
+  color: #333;
+}
+    </style>
+
+</body>
