@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Practice Page</title>
+
+  <style>
+    body {
+      padding: 40px;
+      font-family: Arial;
+      background-color: #f3f3f3;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 48px;
+      color: #333;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+    }
+
+    h1:hover {
+      color: purple;
+    }
+
+    h3 {
+      color: #b19cd9;
+      letter-spacing: 2px;
+      opacity: 0.8;
+    }
+
+    p.intro-text {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      line-height: 1.6;
+    }
+
+    p:nth-of-type(2) {
+      border: 4px solid tomato;
+      background-color: #ffeaea;
+      padding: 15px;
+      transform: rotate(-1deg);
+    }
+
+    hr {
+      width: 120px;
+      height: 6px;
+      background-color: goldenrod;
+      border-radius: 10px;
+      border: none;
+      margin: 30px auto;
+    }
+
+    pre {
+      background-color: #111;
+      color: #39ff14;
+      font-family: monospace;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    ul.feature-list {
+      list-style: none;
+      background-color: #f8ecff;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    ul.feature-list li {
+      margin-bottom: 8px;
+    }
+
+    ol.feature-list {
+      list-style-type: upper-roman;
+      font-weight: bold;
+      padding-left: 30px;
+    }
+
+    ol.feature-list li {
+      margin-bottom: 10px;
+    }
+
+    a.external-link {
+      color: #555;
+      text-decoration: none;
+    }
+
+    a.external-link:hover {
+      text-decoration: underline;
+    }
+
+    div {
+      background-color: white;
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 14px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    }
+
+    div span {
+      color: orange;
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+
+    #submit-btn {
+      padding: 12px 25px;
+      border-radius: 20px;
+      border: none;
+      cursor: pointer;
+    }
+
+    #submit-btn:hover {
+      background-color: orange;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      transform: scale(1.05);
+    }
+
+    footer.page-footer {
+      font-size: 12px;
+      color: #777;
+      text-align: center;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1 id="biggerheading">HTML Learning Page</h1>
+
+  <h3 style="color:rgb(156, 7, 182)">this is a sample sub heading</h3>
+
+  <p class="intro-text">
+    <b>This sentence is bold</b><br>
+    <strong>This text adjusts based on screen size</strong><br>
+    <i>This line is italic</i><br>
+    <em>This text uses emphasis</em> for formatting.
+  </p>
+
+  <hr style="border:3px goldenrod">
+
+  <pre style="color: rgb(255, 101, 5);">
+This content
+   keeps spaces
+and line breaks
+exactly same.
+  </pre>
+
+  <ul class="feature-list">
+    <li>bold tag</li>
+    <li>strong tag</li>
+    <li>italic tag</li>
+  </ul>
+
+  <hr style="border:3px goldenrod">
+
+  <ol class="feature-list">
+    <li>write html</li>
+    <li>save file</li>
+    <li>open browser</li>
+  </ol>
+
+  <a href="https://www.wikipedia.org" target="_blank"
+     class="external-link"
+     style="color: orange; font-weight: bold;">
+     Open Wikipedia Website
+  </a>
+
+  <div>
+    Learning HTML is <span>useful</span> for beginners.
+  </div>
+
+  <button id="submit-btn" style="background-color: gold;">
+    Submit
+  </button>
+
+  <footer class="page-footer">
+    HTML practice footer
+  </footer>
+
+</body>
+</html>
