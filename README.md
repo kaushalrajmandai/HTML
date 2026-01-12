@@ -21,3 +21,6 @@ Output of 12janassignment:
 <img width="1280" height="832" alt="Screenshot 2026-01-12 at 2 29 36 PM" src="https://github.com/user-attachments/assets/9adf31ee-c9d0-439f-adc2-d39821ca69b8" />
 <img width="1280" height="832" alt="Screenshot 2026-01-12 at 2 29 40 PM" src="https://github.com/user-attachments/assets/5638f6d9-942b-49d8-9951-8e7732e45de1" />
 
+Output of 12janhwassignment:
+<img width="1280" height="832" alt="Screenshot 2026-01-13 at 12 41 37 AM" src="https://github.com/user-attachments/assets/49f88cb7-b58c-462e-9d67-4706fb8ac8d8" />
+<img width="1280" height="832" alt="Screenshot 2026-01-13 at 12 41 49 AM" src="https://github.com/user-attachments/assets/b8ea55a2-9542-4d12-8230-28045b5a215d" />
