@@ -1,0 +1,138 @@
+<html>
+<head>
+    <title>Portfolio - Contact</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #555;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            background-color: white;
+            width: 60%;
+            margin: 30px auto;
+            padding: 25px;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+
+        .options {
+            margin-top: 8px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 25px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Contact Me</h1>
+    <p>Student Portfolio</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="education.html">Education</a>
+    <a href="skills.html">Skills</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
+
+    <form>
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your name">
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email">
+
+        <label>Password</label>
+        <input type="password" placeholder="Enter password">
+
+        <label>Gender</label>
+        <div class="options">
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female
+        </div>
+
+        <label>Skills</label>
+        <div class="options">
+            <input type="checkbox"> HTML
+            <input type="checkbox"> CSS
+            <input type="checkbox"> JavaScript
+        </div>
+
+        <label>Course</label>
+        <select>
+            <option>Select Course</option>
+            <option>BSc IT</option>
+            <option>BCA</option>
+            <option>BTech</option>
+        </select>
+
+        <label>Message</label>
+        <textarea rows="4" placeholder="Write your message"></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+
+</div>
+
+<footer>
+    © 2026 Kaushal Rajmandai
+</footer>
+
+</body>
+</html>
