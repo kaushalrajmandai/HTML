@@ -37,5 +37,6 @@ skills.html:
 contact.html:
 <img width="1280" height="832" alt="Screenshot 2026-01-13 at 11 12 11 AM" src="https://github.com/user-attachments/assets/c33aa060-459b-41e7-9365-0f38c9613911" />
 
-![Uploading Screenshot 2026-01-13 at 11.12.34 AM.png…]()
+
+<img width="1280" height="832" alt="Screenshot 2026-01-13 at 11 12 34 AM" src="https://github.com/user-attachments/assets/4818219f-5e43-4759-8314-8202ce8809c2" />
 
