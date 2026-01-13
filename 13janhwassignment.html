@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Alignment Practice</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h2 {
+      margin-top: 40px;
+    }
+
+    .container {
+      display: flex;
+      background: #ddd;
+      padding: 10px;
+      margin-top: 10px;
+      height: 150px;
+    }
+
+    .box {
+      width: 60px;
+      height: 60px;
+      background: #5e5ea7;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 5px;
+    }
+
+    /* Task 1 */
+    .task1 {
+      align-items: center;
+    }
+
+    /* Task 2 */
+    .task2 {
+      align-items: flex-end;
+    }
+
+    /* Task 3 */
+    .task3 {
+      align-items: stretch;
+    }
+
+    .task3 .box {
+      height: auto;
+    }
+
+    /* Task 4 */
+    .task4 {
+      flex-wrap: wrap;
+      align-content: space-between;
+      height: 300px;
+    }
+
+    /* Task 5 */
+    .task5 {
+      flex-wrap: wrap;
+      align-content: center;
+      height: 300px;
+    }
+
+    /* Task 6 */
+    .task6 {
+      flex-wrap: wrap;
+      align-items: center;
+      align-content: center;
+      height: 300px;
+    }
+
+    /* Task 7 */
+    .task7 {
+      align-items: center;
+    }
+
+    .task7 .box3 {
+      align-self: flex-start;
+    }
+
+    /* Task 8 */
+    .task8 {
+      align-items: center;
+    }
+
+    .task8 .last {
+      align-self: flex-end;
+    }
+
+    /* Task 9 */
+    .task9 {
+      height: 200px;
+    }
+
+    .task9 .b1 { align-self: flex-start; }
+    .task9 .b2 { align-self: center; }
+    .task9 .b3 { align-self: flex-end; }
+    .task9 .b4 { align-self: stretch; height: auto; }
+
+    /* Task 10 */
+    .dashboard {
+      display: flex;
+      height: 200px;
+      background: #ccc;
+      align-items: stretch;
+    }
+
+    .sidebar {
+      width: 150px;
+      background: #444;
+      color: white;
+      padding: 10px;
+    }
+
+    .main {
+      flex: 1;
+      background: white;
+      padding: 10px;
+    }
+
+    .notify {
+      width: 150px;
+      background: #777;
+      color: white;
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+<h2>Task 1: align-items center</h2>
+<div class="container task1">
+  <div class="box">1</div><div class="box">2</div><div class="box">3</div><div class="box">4</div><div class="box">5</div>
+</div>
+
+<h2>Task 2: align-items flex-end</h2>
+<div class="container task2">
+  <div class="box">1</div><div class="box">2</div><div class="box">3</div><div class="box">4</div><div class="box">5</div>
+</div>
+
+<h2>Task 3: align-items stretch</h2>
+<div class="container task3">
+  <div class="box">1</div><div class="box">2</div><div class="box">3</div>
+</div>
+
+<h2>Task 4: align-content space-between</h2>
+<div class="container task4">
+  <div class="box">1</div><div class="box">2</div><div class="box">3</div><div class="box">4</div>
+  <div class="box">5</div><div class="box">6</div><div class="box">7</div><div class="box">8</div>
+  <div class="box">9</div><div class="box">10</div><div class="box">11</div><div class="box">12</div>
+</div>
+
+<h2>Task 5: align-content center</h2>
+<div class="container task5">
+  <div class="box">1</div><div class="box">2</div><div class="box">3</div><div class="box">4</div>
+  <div class="box">5</div><div class="box">6</div><div class="box">7</div>
+</div>
+
+<h2>Task 6: align-items vs align-content</h2>
+<div class="container task6">
+  <div class="box">1</div><div class="box">2</div><div class="box">3</div><div class="box">4</div>
+  <div class="box">5</div><div class="box">6</div><div class="box">7</div>
+</div>
+
+<h2>Task 7: align-self override</h2>
+<div class="container task7">
+  <div class="box">1</div><div class="box">2</div><div class="box box3">3</div><div class="box">4</div>
+</div>
+
+<h2>Task 8: last item flex-end</h2>
+<div class="container task8">
+  <div class="box">1</div><div class="box">2</div><div class="box last">3</div>
+</div>
+
+<h2>Task 9: mixed align-self</h2>
+<div class="container task9">
+  <div class="box b1">1</div>
+  <div class="box b2">2</div>
+  <div class="box b3">3</div>
+  <div class="box b4">4</div>
+  <div class="box">5</div>
+</div>
+
+<h2>Task 10: Dashboard Layout</h2>
+<div class="dashboard">
+  <div class="sidebar">Sidebar</div>
+  <div class="main">Main Content</div>
+  <div class="notify">Notifications</div>
+</div>
+
+</body>
+</html>
