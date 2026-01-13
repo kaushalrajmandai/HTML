@@ -40,3 +40,10 @@ contact.html:
 
 <img width="1280" height="832" alt="Screenshot 2026-01-13 at 11 12 34 AM" src="https://github.com/user-attachments/assets/4818219f-5e43-4759-8314-8202ce8809c2" />
 
+Output of 13janhwassignment:
+<img width="1280" height="832" alt="Screenshot 2026-01-13 at 5 01 42 PM" src="https://github.com/user-attachments/assets/32d5e4cd-7847-41b3-8ef9-5a3a53eb6a3d" />
+<img width="1280" height="832" alt="Screenshot 2026-01-13 at 5 01 47 PM" src="https://github.com/user-attachments/assets/e34d6f3d-74b2-4928-b9cd-d9535f73bb0a" />
+<img width="1280" height="832" alt="Screenshot 2026-01-13 at 5 01 50 PM" src="https://github.com/user-attachments/assets/4f4a52a1-56ae-40db-83c3-6850ca7e1e33" />
+<img width="1280" height="832" alt="Screenshot 2026-01-13 at 5 01 53 PM" src="https://github.com/user-attachments/assets/9d8c9532-84d3-493f-816b-213ba773a09c" />
+<img width="1280" height="832" alt="Screenshot 2026-01-13 at 5 01 59 PM" src="https://github.com/user-attachments/assets/b2c1eb00-49ac-4cfc-afeb-337a53d4312d" />
+
