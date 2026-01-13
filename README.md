@@ -24,3 +24,18 @@ Output of 12janassignment:
 Output of 12janhwassignment:
 <img width="1280" height="832" alt="Screenshot 2026-01-13 at 12 41 37 AM" src="https://github.com/user-attachments/assets/49f88cb7-b58c-462e-9d67-4706fb8ac8d8" />
 <img width="1280" height="832" alt="Screenshot 2026-01-13 at 12 41 49 AM" src="https://github.com/user-attachments/assets/b8ea55a2-9542-4d12-8230-28045b5a215d" />
+
+Output of Portfolio Website
+Index.html:<img width="1280" height="832" alt="Screenshot 2026-01-13 at 11 11 35 AM" src="https://github.com/user-attachments/assets/58a80b26-4486-4c62-a2ca-7166e2a4938d" />
+
+education.html:
+<img width="1280" height="832" alt="Screenshot 2026-01-13 at 11 26 40 AM" src="https://github.com/user-attachments/assets/2358e9ed-abbf-463b-9e72-c6948d610fc7" />
+
+skills.html:
+<img width="1280" height="832" alt="Screenshot 2026-01-13 at 11 27 35 AM" src="https://github.com/user-attachments/assets/2e1c3ab0-ecfb-4e96-ae50-ce4518bee01a" />
+
+contact.html:
+<img width="1280" height="832" alt="Screenshot 2026-01-13 at 11 12 11 AM" src="https://github.com/user-attachments/assets/c33aa060-459b-41e7-9365-0f38c9613911" />
+
+![Uploading Screenshot 2026-01-13 at 11.12.34 AM.png…]()
+
