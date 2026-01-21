@@ -47,3 +47,5 @@ Output of 13janhwassignment:
 <img width="1280" height="832" alt="Screenshot 2026-01-13 at 5 01 53 PM" src="https://github.com/user-attachments/assets/9d8c9532-84d3-493f-816b-213ba773a09c" />
 <img width="1280" height="832" alt="Screenshot 2026-01-13 at 5 01 59 PM" src="https://github.com/user-attachments/assets/b2c1eb00-49ac-4cfc-afeb-337a53d4312d" />
 
+Output of NatureGallery:
+<img width="1280" height="832" alt="Screenshot 2026-01-21 at 2 49 05 PM" src="https://github.com/user-attachments/assets/6d73d806-6b44-42d8-8c00-6952de1521bf" />
