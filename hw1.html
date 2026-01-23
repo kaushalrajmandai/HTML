@@ -1,0 +1,106 @@
+<html>
+<head>
+    <title>Interactive Graphics Lab</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #7b68a8;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            color: white;
+        }
+
+        h1 {
+            margin-bottom: 40px;
+            font-weight: 600;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        .lab-container {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card {
+            background-color: white;
+            width: 280px;
+            height: 280px;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            cursor: pointer;
+        }
+
+        .card-label {
+            margin-top: auto;
+            margin-bottom: 25px;
+            color: #888;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        svg {
+            display: block;
+            margin-top: 20px;
+        }
+
+        .orange-ball {
+            transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+        }
+
+        .card:hover .orange-ball {
+            transform: translateY(-70px);
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>HTML & CSS Interactive Graphics Lab</h1>
+
+    <div class="lab-container">
+        
+        <div class="card">
+            <svg width="160" height="150" viewBox="0 0 160 150">
+                <rect x="0" y="0" width="160" height="80" rx="15" fill="#5c9aff" />
+                
+                <circle class="orange-ball" cx="80" cy="120" r="20" fill="#e68a2e" />
+            </svg>
+            <p class="card-label">Hover & Animate</p>
+        </div>
+
+        <div class="card">
+            <svg width="160" height="160" viewBox="0 0 160 160">
+                <circle cx="80" cy="80" r="60" fill="#6bc968" />
+                
+                <g>
+                    <rect x="0" y="76" width="160" height="8" rx="4" fill="#d9534f" />
+                    
+                    <animateTransform 
+                        attributeName="transform" 
+                        attributeType="XML" 
+                        type="rotate" 
+                        from="0 80 80" 
+                        to="360 80 80" 
+                        dur="3s" 
+                        repeatCount="indefinite" />
+                </g>
+            </svg>
+            <p class="card-label">CSS Rotation</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
