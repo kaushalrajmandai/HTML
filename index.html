@@ -1,83 +1,77 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>☘️Fun Nature Gallery🐢</title>
+    <title>Browser Experiment</title>
+
+    <!-- viewport will be added later to observe difference -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-    <h1>☘️Fun Nature Gallery🐢</h1>
-    <p>Explore beautiful free nature photos while learning CSS Grid!</p>
-</header>
+<h1>Browser Behavior Practice</h1>
 
-<nav>
-    <a href="#">Home</a>
-    <a href="#">Landscapes</a>
-    <a href="#">Forests</a>
-    <a href="#">Mountains</a>
-    <a href="#">Walter</a>
-</nav>
+<section>
+    <h3>Form Data Test</h3>
 
-<main>
-    <aside>
-        <h3>Filter Nature</h3>
-        <p>Try selecting:</p>
+    <input type="text" id="name" placeholder="Enter your name">
+    <button onclick="saveData()">Save</button>
+    <button onclick="loadData()">Load</button>
 
-        <ul>
-            <li><input type="checkbox"> Forest</li>
-            <li><input type="checkbox"> Mountains</li>
-            <li><input type="checkbox"> Water</li>
-        </ul>
+    <p id="show"></p>
+</section>
 
-        <p><b>Why this is perfect for Grid class:</b></p>
-        <ul>
-            <li>Main uses 2 column grid</li>
-            <li>Gallery uses grid cards</li>
-            <li>Easy spacing practice</li>
-        </ul>
-    </aside>
+<section>
+    <h3>Visit Counter</h3>
+    <p id="count"></p>
+</section>
 
-    <section class="gallery">
+<section>
+    <h3>My Observation</h3>
 
-        <div class="card">
-            <img src="https://imgs.search.brave.com/XthqQCJXOkE8lbRHB7oTXsG1qnYfJYKIAjP925IY3Co/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9idXJz/dC5zaG9waWZ5Y2Ru/LmNvbS9waG90b3Mv/bG9uZy1mb3Jlc3Qt/cGF0aC5qcGc_d2lk/dGg9MzczJmZvcm1h/dD1wanBnJmV4aWY9/MCZpcHRjPTA">
-            <p>Forest Path</p>
-        </div>
+    <p>
+        When viewport tag was not added, website looked very small on mobile.
+        After adding viewport, text became readable.
+    </p>
 
-        <div class="card">
-            <img src="https://imgs.search.brave.com/3Ej7DXG59GxoXgdVHFuHtW6pAalX8fc1sxN4rbOArow/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzRhLzQy/L2ZiLzRhNDJmYjFk/MDY0ZDA2M2FiOTRk/YjdjNjhlYmYzN2Jm/LmpwZw">
-            <p>Mountain Lake</p>
-        </div>
+    <p>
+        Layout changed when screen size was reduced.
+        Background color changed at different widths.
+    </p>
 
-        <div class="card">
-            <img src="https://imgs.search.brave.com/OH-DeXKyz2gO-L1RxplETOTLrt7PzYo9_6MjnA8FaAA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMucGV4ZWxzLmNv/bS9waG90b3MvNTA1/NDE0OS9wZXhlbHMt/cGhvdG8tNTA1NDE0/OS5qcGVnP2F1dG89/Y29tcHJlc3MmY3M9/dGlueXNyZ2ImZHBy/PTEmdz01MDA">
-            <p>Sunset Road</p>
-        </div>
+    <p>
+        Data is stored in localStorage so it stays even after refresh
+        and works without internet.
+    </p>
+</section>
 
-        <div class="card">
-            <img src="https://imgs.search.brave.com/FEVQNHOSm09ulXvLSvMOqn-0GT-K2BUqKvah6ETI4wY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wbHVz/LnVuc3BsYXNoLmNv/bS9wcmVtaXVtX3Bo/b3RvLTE2Njk3NTA4/MTk5MzItMDM2OTZm/ODgxY2ZlP2l4bGli/PXJiLTQuMS4wJml4/aWQ9TTN3eE1qQTNm/REI4TUh4elpXRnlZ/Mmg4TVRkOGZIZGhk/R1Z5Wm1Gc2JDVXlN/R3hoYm1SelkyRnda/WHhsYm53d2ZId3dm/SHg4TUE9PSZmbT1q/cGcmcT02MCZ3PTMw/MDA">
-            <p>Waterfall View</p>
-        </div>
+<script>
+    function saveData() {
+        var n = document.getElementById("name").value;
+        localStorage.setItem("username", n);
+    }
 
-        <div class="card">
-            <img src="https://imgs.search.brave.com/Yt7TJccVVUZy8II7Uk_CxZ5H8XQuHWvjctBC-B1QmBg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTgx/ODYyNTAxL3Bob3Rv/L2RhcmstbWlzdHkt/Zm9yZXN0LmpwZz9z/PTYxMng2MTImdz0w/Jms9MjAmYz1IYUZf/OWVDM2xvakpLWnFI/eGpEOXp3cUZySk5S/dlh4YS1MQ2FZaE5K/ZUdVPQ">
-            <p>Green Forest</p>
-        </div>
+    function loadData() {
+        var data = localStorage.getItem("username");
+        document.getElementById("show").innerText =
+            "Saved name: " + data;
+    }
 
-        <div class="card">
-            <img src="https://imgs.search.brave.com/AKwYWzhcljPDM7L-wI5lUMdM7vHBqXDC_9Mopq0ckbg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi90cmFu/cXVpbC1iZWFjaC1z/dW5zZXQtODA0OTE3/NC5qcGc">
-            <p>Sunset Beach</p>
-        </div>
+    var visit = localStorage.getItem("visitCount");
 
-    </section>
+    if (visit == null) {
+        visit = 1;
+    } else {
+        visit = Number(visit) + 1;
+    }
 
-</main>
+    localStorage.setItem("visitCount", visit);
 
-<footer>
-     ✌️2026 Nature Gallery — CSS Grid Practice✌️
-</footer>
+    document.getElementById("count").innerText =
+        "Page opened " + visit + " times";
+</script>
 
 </body>
 </html>
