@@ -1,0 +1,59 @@
+<html>
+<head>
+
+<title>Floating Particles Animation</title>
+<style>
+body {
+    margin: 0;
+    background: black;
+    overflow: hidden;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.particle {
+    position: absolute;
+    bottom: -10px;
+    width: 8px;
+    height: 8px;
+    background: white;
+    border-radius: 50%;
+    animation: rise linear infinite;
+}
+
+.particle:nth-child(1) { left: 10%; animation-duration: 2.5s; }
+.particle:nth-child(2) { left: 25%; animation-duration: 3s; }
+.particle:nth-child(3) { left: 40%; animation-duration: 2.7s; }
+.particle:nth-child(4) { left: 55%; animation-duration: 3.2s; }
+.particle:nth-child(5) { left: 70%; animation-duration: 2.9s; }
+.particle:nth-child(6) { left: 85%; animation-duration: 3.1s; }
+
+@keyframes rise {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-110vh);
+        opacity: 0;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+</div>
+
+</body>
+</html>
