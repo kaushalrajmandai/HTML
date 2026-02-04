@@ -82,3 +82,10 @@ Logic runs inside browser.
 
 10. How learning platforms remember progress?
 By storing data locally or in database.
+
+Output of 4febtask:
+
+
+https://github.com/user-attachments/assets/ffb9140e-d172-420c-b030-d98284e027d4
+
+
