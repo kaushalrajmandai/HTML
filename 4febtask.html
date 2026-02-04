@@ -1,0 +1,144 @@
+
+<html>
+<head>
+   
+    <title>Mini Challenge: Keyframe Animations</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            margin: 0;
+            background: #ffffff;
+        }
+
+        h2 { margin-bottom: 10px; font-size: 1.2rem; }
+        
+        .task-container {
+            background: transparent;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .blinking-text {
+            font-size: 24px;
+            font-weight: bold;
+            animation: blink 1.5s infinite;
+        }
+
+        @keyframes blink {
+            0% { opacity: 1; color: #333; }
+            50% { opacity: 0.2; color: #555; }
+            100% { opacity: 1; color: #333; }
+        }
+
+        .circle-loader {
+            width: 40px;
+            height: 40px;
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid #93e034;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+        }
+
+        .dots-container {
+            display: flex;
+            gap: 10px;
+            align-items: flex-end;
+            height: 40px;
+        }
+
+    .dot {
+       width: 15px;
+       height: 15px;
+       background-color: #333;
+       border-radius: 50%;
+       animation: bounce 0.6s infinite alternate;
+        }
+
+        @keyframes bounce {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-20px); }
+        }
+
+        .floating-logo {
+     width: 60px;
+     height: 60px;
+     background-color: #ff0000;        display: flex;
+      justify-content: center;
+            align-items: center;
+            font-weight: bold;
+      color: rgb(213, 23, 23);
+      animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+
+      .progress-container {
+            width: 100%;
+            max-width: 300px;
+            height: 20px;
+            background-color: #e0e0e0;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+    }
+
+        .progress-fill {
+            height: 100%;
+            background-color: #10ac84;
+            width: 0%;
+            animation: slideFill 2s linear infinite;        }
+
+        @keyframes slideFill {
+            0% { width: 0%; }
+            100% { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+ <div class="task-container">
+        <h2>Task 1: Blinking Text Loader</h2>
+        <div class="blinking-text">Loading...</div>
+    </div>
+
+    <div class="task-container">
+        <h2>Task 2: Rotating Circular Loader</h2>
+        <div class="circle-loader"></div>
+    </div>
+
+    <div class="task-container">
+        <h2>Task 3: Bouncing Dots</h2>
+        <div class="dots-container">
+            <div class="dot"></div>
+      <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    </div>
+
+ <div class="task-container">
+        <h2>Task 4: Floating Logo</h2>
+        <div class="floating-logo">LOGO</div>
+    </div>
+
+    <div class="task-container">
+        <h2>Task 5: Sliding Progress Bar</h2>
+        <div class="progress-container">
+        <div class="progress-fill"></div>
+     </div>
+    </div>
+
+</body>
+</html>
