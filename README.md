@@ -99,6 +99,8 @@ Output of hoveringanimation:
 
 Uploading Screen Recording 2026-02-06 at 1.37.17 AM.mp4…
 
+
+
 Part 4:Why does the animation feel smooth / aggressive / heavy?
 	•	The animation feels smooth because the image grows slowly instead of appearing suddenly.
 	•	Using scale makes the movement look natural, like the image is coming closer rather than jumping.
