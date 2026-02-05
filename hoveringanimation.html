@@ -1,0 +1,166 @@
+<html>
+<head>
+<title>Hover Cards</title>
+
+<style>
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f1f5f9;
+  margin: 0;
+  height: 100vh;
+}
+
+.cards {
+  display: flex;
+  gap: 24px;
+}
+
+.card {
+  width: 300px;
+  background: white;
+  border-radius: 14px;
+  padding: 16px;
+}
+
+.card-img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  cursor: pointer;
+}
+
+
+
+@keyframes hoverCard {
+  from { transform: scale(1); }
+  to   { transform: scale(1.05); }
+}
+
+@keyframes hoverImage {
+  from { transform: scale(1); }
+  to   { transform: scale(1.08); }
+}
+
+.card:hover {
+  animation: hoverCard 0.3s ease forwards;
+}
+
+.card:hover .card-img {
+  animation: hoverImage 0.3s ease forwards;
+}
+
+
+@keyframes clickCard {
+  from { transform: scale(1.05); }
+  to   { transform: scale(1.3); }
+}
+
+@keyframes clickImage {
+  from { transform: scale(1.08); }
+  to   { transform: scale(1.5); }
+}
+
+.card:active {
+  animation: clickCard 0.2s ease forwards;
+}
+
+.card:active .card-img {
+  animation: clickImage 0.2s ease forwards;
+}
+
+
+#viewer {
+  display: none;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  backdrop-filter: blur(6px);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.big-image {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 55%;
+  max-width: 80vw;
+  max-height: 80vh;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 1000;
+  transform: translate(-50%, -50%) scale(0.6);
+}
+
+@keyframes openImage {
+  from {
+    transform: translate(-50%, -50%) scale(0.6);
+    opacity: 0;
+  }
+  to {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes showOverlay {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+#viewer:checked ~ .overlay {
+  animation: showOverlay 0.3s ease forwards;
+  pointer-events: all;
+}
+#viewer:checked ~ .big-image {
+  animation: openImage 0.4s ease forwards;
+  pointer-events: all;
+}
+</style>
+</head>
+
+<body>
+
+<input type="checkbox" id="viewer">
+<label for="viewer" class="overlay"></label>
+
+<img class="big-image" id="bigImage">
+
+<div class="cards">
+
+  <div class="card">
+    <label for="viewer"
+      onclick="document.getElementById('bigImage').src=this.querySelector('img').src">
+      <img class="card-img" src="https://imgs.search.brave.com/aRWsOHfNO_j2h2cUi1xJZ27reZXflCraECOl1STBjrs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTEz/ODY3MTYyNy9waG90/by9wb3J0cmFpdC1v/Zi1mcmllbmRseS13/b21hbi13b3JraW5n/LWF0LWFuLWljZS1j/cmVhbS1wYXJsb3It/aGFuZGluZy1hbi1p/Y2UtY3JlYW0td2hp/bGUtc21pbGluZy5q/cGc_cz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/NGhLbXA4cXc1QmxV/UlF4b284VW5pTjU1/bjc2WlBRZGxHSk5s/emFoeERsTT0">
+    </label>
+    <h3>Icecream</h3>
+    <p>Feel the coldness</p>
+  </div>
+
+  <div class="card">
+    <label for="viewer"
+      onclick="document.getElementById('bigImage').src=this.querySelector('img').src">
+      <img class="card-img" src="https://imgs.search.brave.com/sPvGdy776PUybpBXDedQrAzT_XmwsoxaUx2cjMWbQ24/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTI5/MjYxNjU1MC9waG90/by90cmlwbGUtc2No/ZXp3YW4tZnJpZWQt/cmljZS1pcy1hLWxp/cC1zbWFja2luZy1j/b21wbGV0ZS1tZWFs/LWNvbWJpbmF0aW9u/LW9mLXJpY2UtY2hp/Y2tlbi1lZ2cuanBn/P3M9NjEyeDYxMiZ3/PTAmaz0yMCZjPVox/eWlzSTFTNmlTYVpJ/UWQ2WTNIXzRONkl1/c0Y3SVdPdHRCbE9o/b3FYZzg9">
+    </label>
+    <h3>Triple Schezwan Fried Rice</h3>
+    <p>Spicy and delicious</p>
+  </div>
+
+  <div class="card">
+    <label for="viewer"
+      onclick="document.getElementById('bigImage').src=this.querySelector('img').src">
+      <img class="card-img" src="https://imgs.search.brave.com/sUxoy99Ciilptz0Be10CWxhL8YyYcWiyXggZHS7lw5Y/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMjE1/MjgzNjg5MS9waG90/by9pbW9sYS1pdGFs/eS1jaGFybGVzLWxl/Y2xlcmMtb2YtbW9u/YWNvLWFuZC1zY3Vk/ZXJpYS1mZXJyYXJp/LWR1cmluZy1wcmFj/dGljZS1haGVhZC1v/Zi10aGUtZjEuanBn/P3M9NjEyeDYxMiZ3/PTAmaz0yMCZjPXlF/dy1uVk1aOXJLNkxX/SHJZMWhEdnZ2ZmEt/OHNaMm1jM3V6OG51/UnhjaWM9">
+    </label>
+    <h3>Charles Leclerc</h3>
+    <p>Formula 1 Driver</p>
+  </div>
+</div>
+
+</body>
+</html>
