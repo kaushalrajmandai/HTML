@@ -94,5 +94,25 @@ Output of FloatingBalls:
 
 https://github.com/user-attachments/assets/4682cd6c-74ec-4fa5-a188-1e987b143ce6
 
+Output of hoveringanimation:
+
+
+Uploading Screen Recording 2026-02-06 at 1.37.17 AM.mp4…
+
+Part 4:Why does the animation feel smooth / aggressive / heavy?
+	•	The animation feels smooth because the image grows slowly instead of appearing suddenly.
+	•	Using scale makes the movement look natural, like the image is coming closer rather than jumping.
+	•	The blur makes the background look distant, so the big image feels more important and focused.
+	•	The same timing style is used for hover and click, so everything feels consistent.
+
+Which keyframe had the biggest impact on motion?
+	•	openImage is the most important keyframe.
+
+What would break if that keyframe was removed?
+	•	The image would pop up instantly in the center instead of animating.
+	•	The transition from the card to the big image would look rough and unnatural.
+
+
+
 
 
