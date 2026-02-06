@@ -113,8 +113,12 @@ Which keyframe had the biggest impact on motion?
 What would break if that keyframe was removed?
 	•	The image would pop up instantly in the center instead of animating.
 	•	The transition from the card to the big image would look rough and unnatural.
+	
 
+Output of cssrootassignment:
 
+<img width="1280" height="832" alt="Screenshot 2026-02-06 at 4 12 57 PM" src="https://github.com/user-attachments/assets/9792f40e-54b8-487c-bd29-8d7081abaeb4" />
 
+<img width="1280" height="832" alt="Screenshot 2026-02-06 at 4 13 03 PM" src="https://github.com/user-attachments/assets/08ae8e92-687d-49b6-8d48-77b6ee55427b" />
 
 
