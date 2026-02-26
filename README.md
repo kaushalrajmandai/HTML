@@ -121,4 +121,10 @@ Output of cssrootassignment:
 
 <img width="1280" height="832" alt="Screenshot 2026-02-06 at 4 13 03 PM" src="https://github.com/user-attachments/assets/08ae8e92-687d-49b6-8d48-77b6ee55427b" />
 
+Output of bootstrap-page.html:
+
+<img width="1280" height="832" alt="Screenshot 2026-02-26 at 11 39 42 AM" src="https://github.com/user-attachments/assets/703da689-64c9-4d2d-a16e-56a8dfdc8f1d" />
+<img width="1280" height="832" alt="Screenshot 2026-02-26 at 11 39 48 AM" src="https://github.com/user-attachments/assets/70f8322b-d792-420c-8baf-639076ec761d" />
+<img width="1280" height="832" alt="Screenshot 2026-02-26 at 11 39 50 AM" src="https://github.com/user-attachments/assets/78ee4078-4501-4f75-a37c-498fb1a41e92" />
+<img width="1280" height="832" alt="Screenshot 2026-02-26 at 11 07 15 AM" src="https://github.com/user-attachments/assets/f8239857-bc74-489f-8864-47dbcfd5d3c7" />
 
